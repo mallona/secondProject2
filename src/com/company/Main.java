@@ -8,15 +8,15 @@ public class Main {
     public static void main(String[] args) {
 
         int[][] array = createMatrix();
+        System.out.println("Initial matrix");
         displayArray(array);
-        System.out.println("Hi");
+        System.out.println("New matrix");
         replaceNumbers(array);
-
-
     }
 
     public static int[][] createMatrix() {
         Scanner s = new Scanner(System.in);
+        System.out.println("Please enter integer number");
         int size1 = s.nextInt();
         int size2 = size1;
         int[][] matrix = new int[size1][size2];
@@ -37,7 +37,6 @@ public class Main {
             }
             System.out.println();
         }
-
     }
 
     public static void replaceNumbers(int[][] matrix) {
@@ -47,12 +46,7 @@ public class Main {
             }
             System.out.println();
         }
-
-
-        // for (int j = 0; j < matrix.length; j++) {
-        //System.out.println(matrix[j][matrix.length - 1 - j]);
-        //int[][] PrincipalD = new int (matrix[j][matrix.length - 1 - j]);
-        //}
     }
 }
+
 
